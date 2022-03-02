@@ -13,25 +13,10 @@ function Header() {
         <Navbar className='navbar-section p-0' expand="lg">
             <Container>
                 <Row className='w-100 align-items-center'>
-                    <Col md={3}>
+                    <Col lg={3} md={4} sm={6} xs={12}>
                         <Link className='header-logo' to="/"><img src={logo} alt="logo" /></Link>
                     </Col>
-                    <Col md={6}>
-                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                        <Navbar.Collapse id="basic-navbar-nav">
-                            <Nav>
-                                <Nav.Link href="/">Home</Nav.Link>
-                                <Nav.Link href="/">Kits</Nav.Link>
-                                <NavDropdown title="Line Up" id="basic-nav-dropdown">
-                                    <NavDropdown.Item href="/">Beard</NavDropdown.Item>
-                                    <NavDropdown.Item href="/">Hair</NavDropdown.Item>
-                                    <NavDropdown.Item href="/">Tools</NavDropdown.Item>
-                                </NavDropdown>
-                                <Nav.Link href="/">Our Story</Nav.Link>
-                            </Nav>
-                        </Navbar.Collapse>
-                    </Col>
-                    <Col md={3}>
+                    <Col lg={3}  md={6} sm={4} xs={8}  className='order-lg-3'>
                         <div className='header-right'>
                             <div className='login-box'>
                                 <button className='login-btn'>
@@ -47,6 +32,22 @@ function Header() {
                             </div>
                         </div>
                     </Col>
+                    <Col lg={6} md={2} sm={2} xs={4} className='order-lg-2 text-lg-center text-right mobile-toggle'>
+                        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                        <Navbar.Collapse id="basic-navbar-nav">
+                            <Nav>
+                                <Nav.Link href="/">Home</Nav.Link>
+                                <Nav.Link href="/">Kits</Nav.Link>
+                                <NavDropdown title="Line Up" id="basic-nav-dropdown">
+                                    <NavDropdown.Item href="/">Beard</NavDropdown.Item>
+                                    <NavDropdown.Item href="/">Hair</NavDropdown.Item>
+                                    <NavDropdown.Item href="/">Tools</NavDropdown.Item>
+                                </NavDropdown>
+                                <Nav.Link href="/">Our Story</Nav.Link>
+                            </Nav>
+                        </Navbar.Collapse>
+                    </Col>
+                    
                 </Row>
             </Container>
         </Navbar>

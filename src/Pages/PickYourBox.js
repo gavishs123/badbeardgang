@@ -9,7 +9,7 @@ function PickYourBox() {
              <section className='pick_your_box_section'>
                 <Container>
 
-                    <Row>
+                    <Row> 
                       <Col xs={12}>
                       {/* <OwlCarousel className='owl-theme' loop margin={10} nav>
                             <div class='item'>
