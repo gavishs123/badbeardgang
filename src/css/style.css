@@ -1,0 +1,403 @@
+/*
+ 01. Common CSS
+ 02. Header CSS
+ 03. Top Banner Section CSS
+ 04. About Section CSS
+ 05. Product Section CSS
+ 06. Our Oil Section CSS
+ 07. Footer CSS
+ 08. Pick Your Box CSS
+*/
+/* 01. Common CSS */
+a {
+    display: inline-block;
+}
+span {
+    display: inline-block;
+}
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/******************************************/
+/* 02. Header CSS */
+.header-logo {
+    margin: 6px 0;
+}
+.navbar-section {
+    background-color: #000000;
+}
+.navbar-section .navbar-collapse {
+    justify-content: center;
+}
+.navbar-section .navbar-collapse .navbar-nav .nav-link {
+    color: #fff;
+    padding: 0 10px;
+    text-align: center;
+    min-width: 98px;
+}
+.header-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cart-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+}
+
+
+.cart-counter {
+    position: absolute;
+    color: #fff;
+    font-size: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 3px;
+}
+
+.login-btn {
+    background: transparent;
+    border: none;
+    padding: 0;
+    position: relative;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.login-btn svg {
+    margin-right: 14px;
+}
+
+.cart-box {
+    margin-left: 35px;
+}
+/******************************************/
+/* 03. Top Banner Section CSS */
+.top-banner-section {
+    background-image: url(../images/top-banner-bg.jpg);
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 162px 15px;
+}
+.top-banner-detail {
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+.top-banner-section:before {
+    content: "";
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.4;
+    z-index: 1;
+    position: absolute;
+}
+.top-banner-detail h1 {
+    font-size: 34px;
+    color: #fff;
+    font-weight: 500;
+    line-height: 37px;
+    margin: 40px 0;
+}
+.top-banner-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-banner-social li {
+    margin: 0 7px;
+}
+/******************************************/
+
+/* 04. About Section CSS */
+.about-details-left {
+    width: 308px;
+    text-align: center;
+}
+
+.about-details-right {
+    width: 308px;
+    text-align: center;
+}
+
+.about-details {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-details-center {
+    margin-top: -143px;
+}
+
+.about-section {
+    padding-bottom: 70px;
+    background: #DBDBDB;
+}
+
+.about-details-left h3 {
+    margin: 0;
+    font-size: 31px;
+    font-weight: 400;
+}
+
+.about-details-right p {
+    max-width: 258px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about-details-right h2 {
+    margin: 0 0 15px 0;
+    font-size: 31px;
+    font-weight: 500;
+}
+
+/******************************************/
+/* 05. Product Section CSS */
+.product-section {
+    background: #000000;
+}
+
+.product-section-detail {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.product-section-detail-left {
+    padding-right: 57px;
+}
+
+.product-section-detail-left h2 {
+    margin: 0;
+    color: #525252;
+    font-size: 82px;
+    font-weight: 600;
+    line-height: 90px;
+}
+/******************************************/
+
+/* 06. Our Oil Section CSS */
+.our-oil-section {
+    background: #DBDBDB;
+    padding: 56px 0 80px 0;
+}
+
+.our-oil-detail {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.our-oil-detail h4 {
+    color: #767676;
+    font-size: 31px;
+    line-height: 43px;
+    margin-bottom: 10px;
+}
+
+.our-oil-detail p {
+    margin-bottom: 40px;
+    color: #767676;
+    line-height: 23px;
+}
+
+.our-oil-detail a {
+    background: #000000;
+    color: #ffffff;
+    padding: 10px 18px;
+    transition: all 0.3s ease 0s;
+    font-size: 14px;
+}
+
+.our-oil-detail a:hover {
+    background: #E8E6E6;
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover, a {
+    text-decoration: none;
+}
+/******************************************/
+/* 07. Footer CSS */
+.footer-section {
+    background: #DBDBDB;
+    padding-bottom: 20px;
+}
+
+.copyright-text {
+    text-align: center;
+}
+
+.copyright-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #767676;
+}
+
+.footer-options a {
+    text-decoration: underline;
+    color: #767676;
+    font-size: 14px;
+    line-height: normal;
+}
+
+.footer-options li {
+    line-height: 0;
+}
+
+
+/******************************************/
+/* 08. Pick Your Box CSS */
+.card_wrp{
+    padding: 20px 0;
+}
+.benefits_box_card{
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 100%;
+}
+ .pick_your_box_title h1 {
+    color: rgb(199, 199, 199);
+    text-align: center;
+    line-height: 1;
+    margin: 0;
+    font-weight: normal;
+}
+.pick_your_box_title {
+    padding: 40px 16px 45px;
+}
+.pick_box_card{
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    text-align: center;
+}
+.card_title h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 20px;
+    padding-bottom: 12px;
+    line-height: 1.5;
+    margin: 0;
+    font-weight: normal;
+}
+.pick_box_card span.price_currency {
+    font-size: 18px!important;
+    margin-right: 2px;
+    vertical-align: top;
+    display: inline-block;
+}
+.pick_box_card span.price_amount {
+    line-height: 1.2;
+    display: inline-block;
+    font-size: 70px;
+    font-weight: normal;
+}
+.pick_box_card .plane_duration {
+    font-size: 12px;
+    line-height: 1;
+}
+.pick_box_card .plan_tagline {
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+.plan_valid{
+    display: block;
+    font-size: 12px;
+    line-height: 1;
+}
+button.pick_box_card_button {
+    margin-top: 24px;
+    padding: 14px 16px;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    align-items: center;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.benefits .benefits_list{
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.benefits .benefits_list li{
+    font-size: 14px;
+    padding-top: calc(1.5em/2);
+    padding-bottom: calc(1.5em/2);
+}
+.benefits .benefits_list li:first-child{
+    padding-top: 0;
+}
+.best_value_card{
+    background-color: rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+.best_value_title {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: rgb(255, 255, 255);
+    background-color: rgb(56, 74, 211);
+    border-color: rgba(0, 0, 0, 0);
+    top: 0;
+    margin: 0 auto;
+}
+
+
+/******************************************/
+@media only screen and (min-width: 1200px) {
+    .navbar-section .container {
+        max-width: 1060px;
+    }
+    .product-section .container {
+        max-width: 1252px;
+    }
+    .footer-section .container {
+        max-width: 960px;
+    }
+    .pick_your_box_section .container {
+        max-width: 966px;
+    }
+    
+}
+
+ 
+
+ 
+
+@media (max-width: 575px) {
+    .card_wrp .row{
+        grid-gap: 32px;
+    }
+}
+ 
