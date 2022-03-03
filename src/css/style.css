@@ -7,6 +7,8 @@
  06. Our Oil Section CSS
  07. Footer CSS
  08. Pick Your Box CSS
+ 09. Our Story CSS
+ 10. Login CSS
 */
 /* 01. Common CSS */
 a {
@@ -374,6 +376,62 @@ button.pick_box_card_button {
     margin: 0 auto;
 }
 
+/******************************************/
+/* 09. Our Story CSS */
+
+.our-story-banner{
+    background-color: #0a0a0a;
+}
+h1.banner-title {
+    margin-bottom: 48px;
+    font-size: 37px;
+    font-weight: normal;
+    letter-spacing: 0.05em;
+    color: rgb(255,255,255);
+}
+.banner-text{
+    letter-spacing: 0em;
+    font-size: 19px;
+    line-height: normal;
+    margin-bottom: 0;
+    color: rgb(255,255,255);
+    font-weight: normal;
+    margin: 0px 55px;
+}
+section.raw_materials {
+    background-color: rgb(232,230,230);
+}
+.raw_materials_detail{
+    padding: 49px 0;
+}
+h1.our_story_title {
+    font-size: 56px;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+h6.our_story_sub_title {
+    font-size: 16px;
+    color: #0A0A0A;
+    font-weight: normal;
+    margin-bottom: 21px;
+}
+
+
+/******************************************/
+/* 10. Login CSS */
+.login_model {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 99;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    align-items: center;
+}
 
 /******************************************/
 @media only screen and (min-width: 1200px) {
@@ -388,6 +446,9 @@ button.pick_box_card_button {
     }
     .pick_your_box_section .container {
         max-width: 966px;
+    }
+    .raw_materials .container {
+        max-width: 950px;
     }
     
 } 
@@ -418,6 +479,8 @@ button.pick_box_card_button {
 }
 .navbar-section .navbar-collapse .navbar-nav .nav-link {padding: 0 20px;text-align: left;}
 .navbar-nav{padding-bottom: 15px;}
+h1.banner-title {margin-bottom: 30px;}
+.banner-text{margin: 0; padding-bottom: 30px;}
 }
 @media (max-width: 767px){
 .about-details .about-img{width: 100%;}
@@ -430,6 +493,26 @@ button.pick_box_card_button {
     line-height: 45px;
 }
 .benefits_box_card{height: auto;margin-bottom: 30px;}
+.our-story-banner .container .row{
+    flex-direction: column-reverse;
+}
+h1.banner-title{font-size: 28px;}
+img.man-image {
+    padding-bottom: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    display: block;
+}
+.banner-text{
+    font-size: 16px;
+    
+}
+h1.our_story_title{
+    font-size: 30px;
+}
+h6.our_story_sub_title, p.our_story_text{
+    font-size: 14px;
+}
 }
 
 @media (max-width: 575px) {
@@ -484,6 +567,9 @@ button.pick_box_card_button {
     .pick_your_box_title h1 {font-size: 28px;}
     .pick_your_box_title {
         padding: 30px 0px 20px;
+    }
+    img.man-image{
+        max-width: 71%;
     }
 }
  

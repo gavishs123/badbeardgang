@@ -50,6 +50,11 @@ function Header() {
                     
                 </Row>
             </Container>
+            {/* <div className='login_model'>
+                <h1>Log In</h1>
+                <p>New to this site?Sign Up</p>
+                 
+            </div> */}
         </Navbar>
 
     )
