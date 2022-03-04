@@ -419,7 +419,7 @@ h6.our_story_sub_title {
 
 /******************************************/
 /* 10. Login CSS */
-.login_model {
+.login_reg_model {
     position: fixed;
     top: 0;
     right: 0;
@@ -428,11 +428,127 @@ h6.our_story_sub_title {
     background: #fff;
     z-index: 99;
     display: flex;
-    flex-direction: column;
-    align-content: space-around;
     align-items: center;
+    justify-content: center;
+    padding: 0 15px;
+}
+.close-model {
+    position: fixed;
+    touch-action: manipulation;
+    top: 60px;
+    right: 60px;
+    background: none;
+    z-index: 3;
+    background: transparent;
+    padding: 0;
+    border: none;
 }
 
+.login_reg_model-inner {
+    max-width: 316px;
+    width: 100%;
+    text-align: center;
+    margin-top: -140px;
+}
+
+.login_reg_model-inner h1 {
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 24px;
+    margin-top: 10px;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+    font-weight: lighter;
+}
+.login_reg_model-inner p a {
+    color: rgb(56, 74, 211);
+}
+
+.login_reg_model-inner p {
+    margin-bottom: 30px;
+}
+
+.facebook-login {
+    background: #3b5998;
+}
+
+.social-login {
+    position: relative;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 16px;
+    font-weight: 300;
+    border: none;
+    outline: 0;
+}
+
+.social-login img {
+    width: 20px;
+}
+
+
+
+.icon-box {
+    display: inline;
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 16px;
+    height: 20px;
+    line-height: 0;
+    width: 20px;
+}
+
+span.login-title {
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    width: 100%;
+    font-family: Helvetica;
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 300;
+    cursor: pointer;
+    outline: 0;
+}
+
+.google-login {
+    background: #4285f4;
+}
+
+.or-border {
+    width: 320px;
+    text-align: center;
+    margin: 12px auto 24px;
+    height: 11px;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.or-border span {
+    font-size: 16px;
+    padding: 0 13px;
+    background: #fff;
+    position: relative;
+    top: -4px;
+}
+
+.Login-email-btn {
+    width: 100%;
+    border: 1px solid rgb(199, 199, 199);
+    background: transparent;
+    padding: 7px 0;
+}
+
+.Login-email-btn:hover {
+    border-color: rgb(0, 0, 0);
+}
 /******************************************/
 @media only screen and (min-width: 1200px) {
     .navbar-section .container {

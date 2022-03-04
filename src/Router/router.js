@@ -6,13 +6,13 @@ import PickYourBox from '../Pages/PickYourBox'
 function Routes() {
     return (
         <Switch>
-            {/* <Route path="/">
+            <Route exact path="/">
                 <Home />
-            </Route> */}
-            <Route path="/pick-your-box">
+            </Route>
+            <Route exact path="/pick-your-box">
                 <PickYourBox />
             </Route>
-            <Route path="/our-story">
+            <Route exact path="/our-story">
                 <OurStory />
             </Route>
         </Switch>
